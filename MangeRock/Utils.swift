@@ -15,15 +15,15 @@ class Utils {
             let pdfdata = try NSData(contentsOfFile: path, options: NSData.ReadingOptions.init(rawValue: 0))
 
             let pdfData = pdfdata as CFData
-            let provider: CGDataProvider = CGDataProvider(data: pdfData)!
-            let pdfDoc: CGPDFDocument = CGPDFDocument(provider)!
+            guard let provider: CGDataProvider = CGDataProvider(data: pdfData) else { return nil }
+            guard let pdfDoc: CGPDFDocument = CGPDFDocument(provider) else { return nil }
 
-            let pdfPage: CGPDFPage = pdfDoc.page(at: page)!
+            guard let pdfPage: CGPDFPage = pdfDoc.page(at: page) else { return nil }
             var pageRect: CGRect = pdfPage.getBoxRect(.mediaBox)
             pageRect.size = CGSize(width: pageRect.size.width, height: pageRect.size.height)
 
             UIGraphicsBeginImageContext(pageRect.size)
-            let context:CGContext = UIGraphicsGetCurrentContext()!
+            let context: CGContext = UIGraphicsGetCurrentContext()!
             context.saveGState()
             context.translateBy(x: 0.0, y: pageRect.size.height)
             context.scaleBy(x: 1.0, y: -1.0)

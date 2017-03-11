@@ -31,20 +31,18 @@ class ThumbnailCollectionViewCell: UICollectionViewCell {
             let imagePath = (jsonFile.path as NSString).appendingPathComponent(jsonFile.contentFiles[index].name)
             let fileManager = FileManager.default
             
-            if jsonFile.contentFiles[index].url?.pathExtension == "pdf" {
-                self.thumbnailImageView.image = Utils.loadImageFromPDF(at: imagePath)
-                self.thumbnailImageView.backgroundColor = UIColor.white
-            } else if jsonFile.contentFiles[index].url?.pathExtension == "zip" {
-                self.thumbnailImageView.image = Utils.unzipImage(path: imagePath)
-            } else {
-                if fileManager.fileExists(atPath: imagePath) {
+            if fileManager.fileExists(atPath: imagePath) {
+                if jsonFile.contentFiles[index].url?.pathExtension == "pdf" {
+                    self.thumbnailImageView.image = Utils.loadImageFromPDF(at: imagePath)
+                    self.thumbnailImageView.backgroundColor = UIColor.white
+                } else if jsonFile.contentFiles[index].url?.pathExtension == "zip" {
+                    self.thumbnailImageView.image = Utils.unzipImage(path: imagePath)
+                } else {
                     if let image = UIImage(contentsOfFile: imagePath) {
                         self.thumbnailImageView.image = image
                     } else {
                         progressLable.text = ""
                     }
-                } else {
-                    print("No Image")
                 }
             }
         }

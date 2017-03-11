@@ -25,18 +25,17 @@ class BrowserCollectionViewCell: UICollectionViewCell {
             let imagePath = (jsonFile.path as NSString).appendingPathComponent(jsonFile.contentFiles[index].name)
             let fileManager = FileManager.default
             
-            if jsonFile.contentFiles[index].url?.pathExtension == "pdf" {
-                self.coverImageView.image = Utils.loadImageFromPDF(at: imagePath)
-                self.coverImageView.backgroundColor = UIColor.white
-            } else if jsonFile.contentFiles[index].url?.pathExtension == "zip" {
-                self.coverImageView.image = Utils.unzipImage(path: imagePath)
-            } else {
-                if fileManager.fileExists(atPath: imagePath) {
+            if fileManager.fileExists(atPath: imagePath) {
+                
+                if jsonFile.contentFiles[index].url?.pathExtension == "pdf" {
+                    self.coverImageView.image = Utils.loadImageFromPDF(at: imagePath)
+                    self.coverImageView.backgroundColor = UIColor.white
+                } else if jsonFile.contentFiles[index].url?.pathExtension == "zip" {
+                    self.coverImageView.image = Utils.unzipImage(path: imagePath)
+                } else {
                     if let image = UIImage(contentsOfFile: imagePath) {
                         self.coverImageView.image = image
                     }
-                } else {
-                    print("No Image")
                 }
             }
         }

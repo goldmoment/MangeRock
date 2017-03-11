@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1938A69F628563C81355CBAD /* Pods_MangeRockUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8645E0F4AEFA8AD144E7C209 /* Pods_MangeRockUITests.framework */; };
+		408A45F76D50424145AE8A89 /* Pods_MangeRockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7967642DF7E678DD8D196300 /* Pods_MangeRockTests.framework */; };
+		C907D53F1E72A4250081FC29 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907D53E1E72A4250081FC29 /* BrowserViewController.swift */; };
+		C907D5411E72A4D00081FC29 /* BrowserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907D5401E72A4D00081FC29 /* BrowserCollectionViewCell.swift */; };
+		C907D5431E72B4770081FC29 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907D5421E72B4770081FC29 /* Utils.swift */; };
+		C90CE6F51E7185B500B41758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90CE6F41E7185B500B41758 /* AppDelegate.swift */; };
+		C90CE6F71E7185B500B41758 /* FileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90CE6F61E7185B500B41758 /* FileViewController.swift */; };
+		C90CE6FA1E7185B500B41758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90CE6F81E7185B500B41758 /* Main.storyboard */; };
+		C90CE6FC1E7185B500B41758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90CE6FB1E7185B500B41758 /* Assets.xcassets */; };
+		C90CE6FF1E7185B500B41758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90CE6FD1E7185B500B41758 /* LaunchScreen.storyboard */; };
+		C90CE70A1E7185B500B41758 /* MangeRockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90CE7091E7185B500B41758 /* MangeRockTests.swift */; };
+		C90CE7151E7185B500B41758 /* MangeRockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90CE7141E7185B500B41758 /* MangeRockUITests.swift */; };
+		C90CE7241E718AB700B41758 /* FileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90CE7231E718AB700B41758 /* FileTableViewCell.swift */; };
+		C90CE7271E7199D700B41758 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90CE7261E7199D700B41758 /* Download.swift */; };
+		C9A359321E71A75B007AD536 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A359311E71A75B007AD536 /* Extension.swift */; };
+		C9A359341E71AEF7007AD536 /* JsonFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A359331E71AEF7007AD536 /* JsonFile.swift */; };
+		C9A359361E71C0D7007AD536 /* ThumbnailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A359351E71C0D7007AD536 /* ThumbnailViewController.swift */; };
+		C9A359381E71C1D9007AD536 /* ThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A359371E71C1D9007AD536 /* ThumbnailCollectionViewCell.swift */; };
+		C9A3593A1E724BB7007AD536 /* ContentFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A359391E724BB7007AD536 /* ContentFile.swift */; };
+		E30D9C1320CD998A8019AE22 /* Pods_MangeRock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B611688D29E3062E8DEABE54 /* Pods_MangeRock.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C90CE7061E7185B500B41758 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C90CE6E91E7185B400B41758 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C90CE6F01E7185B500B41758;
+			remoteInfo = MangeRock;
+		};
+		C90CE7111E7185B500B41758 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C90CE6E91E7185B400B41758 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C90CE6F01E7185B500B41758;
+			remoteInfo = MangeRock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		66FCC830159B1771BE44A87B /* Pods-MangeRockUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangeRockUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MangeRockUITests/Pods-MangeRockUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7967642DF7E678DD8D196300 /* Pods_MangeRockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangeRockTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C43402E22182307D4865336 /* Pods-MangeRockUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangeRockUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MangeRockUITests/Pods-MangeRockUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8645E0F4AEFA8AD144E7C209 /* Pods_MangeRockUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangeRockUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E6E63577D40030C392117A3 /* Pods-MangeRockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangeRockTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MangeRockTests/Pods-MangeRockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3717C61E98830EC5C145B94 /* Pods-MangeRock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangeRock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MangeRock/Pods-MangeRock.debug.xcconfig"; sourceTree = "<group>"; };
+		B0C43CABFDE855D7868EF796 /* Pods-MangeRock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangeRock.release.xcconfig"; path = "Pods/Target Support Files/Pods-MangeRock/Pods-MangeRock.release.xcconfig"; sourceTree = "<group>"; };
+		B1E9BF60B3124DD9E801AE87 /* Pods-MangeRockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangeRockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MangeRockTests/Pods-MangeRockTests.release.xcconfig"; sourceTree = "<group>"; };
+		B611688D29E3062E8DEABE54 /* Pods_MangeRock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangeRock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C907D53E1E72A4250081FC29 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		C907D5401E72A4D00081FC29 /* BrowserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserCollectionViewCell.swift; sourceTree = "<group>"; };
+		C907D5421E72B4770081FC29 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		C90CE6F11E7185B500B41758 /* MangeRock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangeRock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90CE6F41E7185B500B41758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C90CE6F61E7185B500B41758 /* FileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileViewController.swift; sourceTree = "<group>"; };
+		C90CE6F91E7185B500B41758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C90CE6FB1E7185B500B41758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C90CE6FE1E7185B500B41758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C90CE7001E7185B500B41758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90CE7051E7185B500B41758 /* MangeRockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangeRockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90CE7091E7185B500B41758 /* MangeRockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangeRockTests.swift; sourceTree = "<group>"; };
+		C90CE70B1E7185B500B41758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90CE7101E7185B500B41758 /* MangeRockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangeRockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90CE7141E7185B500B41758 /* MangeRockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangeRockUITests.swift; sourceTree = "<group>"; };
+		C90CE7161E7185B500B41758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90CE7231E718AB700B41758 /* FileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTableViewCell.swift; sourceTree = "<group>"; };
+		C90CE7261E7199D700B41758 /* Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		C9A359311E71A75B007AD536 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		C9A359331E71AEF7007AD536 /* JsonFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonFile.swift; sourceTree = "<group>"; };
+		C9A359351E71C0D7007AD536 /* ThumbnailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailViewController.swift; sourceTree = "<group>"; };
+		C9A359371E71C1D9007AD536 /* ThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
+		C9A359391E724BB7007AD536 /* ContentFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentFile.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C90CE6EE1E7185B500B41758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E30D9C1320CD998A8019AE22 /* Pods_MangeRock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90CE7021E7185B500B41758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408A45F76D50424145AE8A89 /* Pods_MangeRockTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90CE70D1E7185B500B41758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1938A69F628563C81355CBAD /* Pods_MangeRockUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30E832E60B13E497CFDF6333 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3717C61E98830EC5C145B94 /* Pods-MangeRock.debug.xcconfig */,
+				B0C43CABFDE855D7868EF796 /* Pods-MangeRock.release.xcconfig */,
+				8E6E63577D40030C392117A3 /* Pods-MangeRockTests.debug.xcconfig */,
+				B1E9BF60B3124DD9E801AE87 /* Pods-MangeRockTests.release.xcconfig */,
+				66FCC830159B1771BE44A87B /* Pods-MangeRockUITests.debug.xcconfig */,
+				7C43402E22182307D4865336 /* Pods-MangeRockUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		37752FF384617202C56DB8F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B611688D29E3062E8DEABE54 /* Pods_MangeRock.framework */,
+				7967642DF7E678DD8D196300 /* Pods_MangeRockTests.framework */,
+				8645E0F4AEFA8AD144E7C209 /* Pods_MangeRockUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C907D5441E73922F0081FC29 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C907D53E1E72A4250081FC29 /* BrowserViewController.swift */,
+				C9A359351E71C0D7007AD536 /* ThumbnailViewController.swift */,
+				C90CE6F61E7185B500B41758 /* FileViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C90CE6E81E7185B400B41758 = {
+			isa = PBXGroup;
+			children = (
+				C90CE6F31E7185B500B41758 /* MangeRock */,
+				C90CE7081E7185B500B41758 /* MangeRockTests */,
+				C90CE7131E7185B500B41758 /* MangeRockUITests */,
+				C90CE6F21E7185B500B41758 /* Products */,
+				30E832E60B13E497CFDF6333 /* Pods */,
+				37752FF384617202C56DB8F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C90CE6F21E7185B500B41758 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C90CE6F11E7185B500B41758 /* MangeRock.app */,
+				C90CE7051E7185B500B41758 /* MangeRockTests.xctest */,
+				C90CE7101E7185B500B41758 /* MangeRockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C90CE6F31E7185B500B41758 /* MangeRock */ = {
+			isa = PBXGroup;
+			children = (
+				C907D5441E73922F0081FC29 /* ViewControllers */,
+				C90CE7251E7199BB00B41758 /* Data objects */,
+				C90CE7221E718A9F00B41758 /* Cells */,
+				C90CE6F41E7185B500B41758 /* AppDelegate.swift */,
+				C90CE6F81E7185B500B41758 /* Main.storyboard */,
+				C90CE6FB1E7185B500B41758 /* Assets.xcassets */,
+				C90CE6FD1E7185B500B41758 /* LaunchScreen.storyboard */,
+				C90CE7001E7185B500B41758 /* Info.plist */,
+				C9A359311E71A75B007AD536 /* Extension.swift */,
+				C907D5421E72B4770081FC29 /* Utils.swift */,
+			);
+			path = MangeRock;
+			sourceTree = "<group>";
+		};
+		C90CE7081E7185B500B41758 /* MangeRockTests */ = {
+			isa = PBXGroup;
+			children = (
+				C90CE7091E7185B500B41758 /* MangeRockTests.swift */,
+				C90CE70B1E7185B500B41758 /* Info.plist */,
+			);
+			path = MangeRockTests;
+			sourceTree = "<group>";
+		};
+		C90CE7131E7185B500B41758 /* MangeRockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C90CE7141E7185B500B41758 /* MangeRockUITests.swift */,
+				C90CE7161E7185B500B41758 /* Info.plist */,
+			);
+			path = MangeRockUITests;
+			sourceTree = "<group>";
+		};
+		C90CE7221E718A9F00B41758 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C90CE7231E718AB700B41758 /* FileTableViewCell.swift */,
+				C9A359371E71C1D9007AD536 /* ThumbnailCollectionViewCell.swift */,
+				C907D5401E72A4D00081FC29 /* BrowserCollectionViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		C90CE7251E7199BB00B41758 /* Data objects */ = {
+			isa = PBXGroup;
+			children = (
+				C90CE7261E7199D700B41758 /* Download.swift */,
+				C9A359331E71AEF7007AD536 /* JsonFile.swift */,
+				C9A359391E724BB7007AD536 /* ContentFile.swift */,
+			);
+			name = "Data objects";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C90CE6F01E7185B500B41758 /* MangeRock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90CE7191E7185B500B41758 /* Build configuration list for PBXNativeTarget "MangeRock" */;
+			buildPhases = (
+				0CE19780916A75217AEF06B4 /* [CP] Check Pods Manifest.lock */,
+				C90CE6ED1E7185B500B41758 /* Sources */,
+				C90CE6EE1E7185B500B41758 /* Frameworks */,
+				C90CE6EF1E7185B500B41758 /* Resources */,
+				F64850D943D3E3382004ADE0 /* [CP] Embed Pods Frameworks */,
+				1D9495BBF7E7BD2AE1329320 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MangeRock;
+			productName = MangeRock;
+			productReference = C90CE6F11E7185B500B41758 /* MangeRock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C90CE7041E7185B500B41758 /* MangeRockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90CE71C1E7185B500B41758 /* Build configuration list for PBXNativeTarget "MangeRockTests" */;
+			buildPhases = (
+				F9078948E4C24E67DBED4B42 /* [CP] Check Pods Manifest.lock */,
+				C90CE7011E7185B500B41758 /* Sources */,
+				C90CE7021E7185B500B41758 /* Frameworks */,
+				C90CE7031E7185B500B41758 /* Resources */,
+				BAC3AA1FDD7205F4E0BD09E9 /* [CP] Embed Pods Frameworks */,
+				5E6D0C1227643199B1A572E5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C90CE7071E7185B500B41758 /* PBXTargetDependency */,
+			);
+			name = MangeRockTests;
+			productName = MangeRockTests;
+			productReference = C90CE7051E7185B500B41758 /* MangeRockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C90CE70F1E7185B500B41758 /* MangeRockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90CE71F1E7185B500B41758 /* Build configuration list for PBXNativeTarget "MangeRockUITests" */;
+			buildPhases = (
+				50EAF5F178DE4A91208EFCE0 /* [CP] Check Pods Manifest.lock */,
+				C90CE70C1E7185B500B41758 /* Sources */,
+				C90CE70D1E7185B500B41758 /* Frameworks */,
+				C90CE70E1E7185B500B41758 /* Resources */,
+				87D06CC5EFC13722C790ABE1 /* [CP] Embed Pods Frameworks */,
+				56F6F918DC3D2A8840AB6F72 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C90CE7121E7185B500B41758 /* PBXTargetDependency */,
+			);
+			name = MangeRockUITests;
+			productName = MangeRockUITests;
+			productReference = C90CE7101E7185B500B41758 /* MangeRockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C90CE6E91E7185B400B41758 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Vien Van Nguyen";
+				TargetAttributes = {
+					C90CE6F01E7185B500B41758 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G3TWPQRVYX;
+						ProvisioningStyle = Automatic;
+					};
+					C90CE7041E7185B500B41758 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C90CE6F01E7185B500B41758;
+					};
+					C90CE70F1E7185B500B41758 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C90CE6F01E7185B500B41758;
+					};
+				};
+			};
+			buildConfigurationList = C90CE6EC1E7185B400B41758 /* Build configuration list for PBXProject "MangeRock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C90CE6E81E7185B400B41758;
+			productRefGroup = C90CE6F21E7185B500B41758 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C90CE6F01E7185B500B41758 /* MangeRock */,
+				C90CE7041E7185B500B41758 /* MangeRockTests */,
+				C90CE70F1E7185B500B41758 /* MangeRockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C90CE6EF1E7185B500B41758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90CE6FF1E7185B500B41758 /* LaunchScreen.storyboard in Resources */,
+				C90CE6FC1E7185B500B41758 /* Assets.xcassets in Resources */,
+				C90CE6FA1E7185B500B41758 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90CE7031E7185B500B41758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90CE70E1E7185B500B41758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CE19780916A75217AEF06B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1D9495BBF7E7BD2AE1329320 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MangeRock/Pods-MangeRock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50EAF5F178DE4A91208EFCE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		56F6F918DC3D2A8840AB6F72 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MangeRockUITests/Pods-MangeRockUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E6D0C1227643199B1A572E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MangeRockTests/Pods-MangeRockTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87D06CC5EFC13722C790ABE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MangeRockUITests/Pods-MangeRockUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAC3AA1FDD7205F4E0BD09E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MangeRockTests/Pods-MangeRockTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F64850D943D3E3382004ADE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MangeRock/Pods-MangeRock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9078948E4C24E67DBED4B42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C90CE6ED1E7185B500B41758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A359321E71A75B007AD536 /* Extension.swift in Sources */,
+				C90CE6F71E7185B500B41758 /* FileViewController.swift in Sources */,
+				C90CE7271E7199D700B41758 /* Download.swift in Sources */,
+				C9A359341E71AEF7007AD536 /* JsonFile.swift in Sources */,
+				C9A3593A1E724BB7007AD536 /* ContentFile.swift in Sources */,
+				C90CE7241E718AB700B41758 /* FileTableViewCell.swift in Sources */,
+				C9A359381E71C1D9007AD536 /* ThumbnailCollectionViewCell.swift in Sources */,
+				C907D53F1E72A4250081FC29 /* BrowserViewController.swift in Sources */,
+				C90CE6F51E7185B500B41758 /* AppDelegate.swift in Sources */,
+				C907D5411E72A4D00081FC29 /* BrowserCollectionViewCell.swift in Sources */,
+				C9A359361E71C0D7007AD536 /* ThumbnailViewController.swift in Sources */,
+				C907D5431E72B4770081FC29 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90CE7011E7185B500B41758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90CE70A1E7185B500B41758 /* MangeRockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90CE70C1E7185B500B41758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90CE7151E7185B500B41758 /* MangeRockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C90CE7071E7185B500B41758 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C90CE6F01E7185B500B41758 /* MangeRock */;
+			targetProxy = C90CE7061E7185B500B41758 /* PBXContainerItemProxy */;
+		};
+		C90CE7121E7185B500B41758 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C90CE6F01E7185B500B41758 /* MangeRock */;
+			targetProxy = C90CE7111E7185B500B41758 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C90CE6F81E7185B500B41758 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90CE6F91E7185B500B41758 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C90CE6FD1E7185B500B41758 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90CE6FE1E7185B500B41758 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C90CE7171E7185B500B41758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C90CE7181E7185B500B41758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C90CE71A1E7185B500B41758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3717C61E98830EC5C145B94 /* Pods-MangeRock.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G3TWPQRVYX;
+				INFOPLIST_FILE = MangeRock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldmoment.MangeRock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C90CE71B1E7185B500B41758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0C43CABFDE855D7868EF796 /* Pods-MangeRock.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G3TWPQRVYX;
+				INFOPLIST_FILE = MangeRock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldmoment.MangeRock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C90CE71D1E7185B500B41758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E6E63577D40030C392117A3 /* Pods-MangeRockTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MangeRockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldmoment.MangeRockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MangeRock.app/MangeRock";
+			};
+			name = Debug;
+		};
+		C90CE71E1E7185B500B41758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E9BF60B3124DD9E801AE87 /* Pods-MangeRockTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MangeRockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldmoment.MangeRockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MangeRock.app/MangeRock";
+			};
+			name = Release;
+		};
+		C90CE7201E7185B500B41758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66FCC830159B1771BE44A87B /* Pods-MangeRockUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MangeRockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldmoment.MangeRockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MangeRock;
+			};
+			name = Debug;
+		};
+		C90CE7211E7185B500B41758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C43402E22182307D4865336 /* Pods-MangeRockUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MangeRockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldmoment.MangeRockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MangeRock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C90CE6EC1E7185B400B41758 /* Build configuration list for PBXProject "MangeRock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90CE7171E7185B500B41758 /* Debug */,
+				C90CE7181E7185B500B41758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90CE7191E7185B500B41758 /* Build configuration list for PBXNativeTarget "MangeRock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90CE71A1E7185B500B41758 /* Debug */,
+				C90CE71B1E7185B500B41758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90CE71C1E7185B500B41758 /* Build configuration list for PBXNativeTarget "MangeRockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90CE71D1E7185B500B41758 /* Debug */,
+				C90CE71E1E7185B500B41758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90CE71F1E7185B500B41758 /* Build configuration list for PBXNativeTarget "MangeRockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90CE7201E7185B500B41758 /* Debug */,
+				C90CE7211E7185B500B41758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C90CE6E91E7185B400B41758 /* Project object */;
+}

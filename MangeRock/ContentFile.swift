@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ContentFile {
+class ContentFile: Equatable {
     var name: String = ""
     var path: String = ""
     var url: URL? = nil
@@ -30,5 +30,9 @@ class ContentFile {
             self.url = url
             self.name = url.lastPathComponent
         }
+    }
+    
+    public static func ==(lhs: ContentFile, rhs: ContentFile) -> Bool {
+        return lhs.url == rhs.url
     }
 }

@@ -15,10 +15,8 @@ class FileViewController: UIViewController {
     @IBOutlet weak var pauseBarButtonItem: UIBarButtonItem!
     
     lazy var downloadsSession: URLSession = {
-//         Run mutilple thread
-        let configuration = URLSessionConfiguration.default
-        // Run with enable background transfers but only one thread 😢
-//        let configuration = URLSessionConfiguration.background(withIdentifier: "bgSessionConfiguration")
+        // Run with enable background transfers 😢
+        let configuration = URLSessionConfiguration.background(withIdentifier: "bgSessionConfiguration")
         let session = URLSession(configuration: configuration, delegate: self, delegateQueue: nil)
         return session
     }()
@@ -208,6 +206,11 @@ extension FileViewController: ThumbnailViewControllerDelegate {
             }
         }
         
+        
+        for download in activeDownloads.values {
+            download.downloadTask?.resume()
+        }
+        
         if activeDownloads.isEmpty {
             dequeue()
         }
@@ -333,6 +336,11 @@ extension FileViewController: URLSessionDownloadDelegate {
 extension FileViewController: URLSessionDelegate {
     
     func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
+        
+        activeDownloads = [:]
+        queue = []
+        dequeue()
+        
         if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
             if let completionHandler = appDelegate.backgroundSessionCompletionHandler {
                 appDelegate.backgroundSessionCompletionHandler = nil

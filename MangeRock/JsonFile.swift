@@ -38,6 +38,9 @@ class JsonFile {
                 contentFiles = urlFiles.map({ (url) -> ContentFile in
                     return ContentFile(url: url)
                 })
+                
+                contentFiles = contentFiles.removeDuplicates()
+
             } catch let error {
                 print(error.localizedDescription)
             }
